@@ -1,0 +1,67 @@
+# Contract Processing System - Complete Requirements
+# All dependencies for: PDF generation, text extraction, entity extraction, and query system
+
+# ============================================================================
+# Core ML/AI Libraries
+# ============================================================================
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+
+# ============================================================================
+# PDF Generation & Processing
+# ============================================================================
+reportlab>=4.0.0
+PyPDF2>=3.0.0
+pdf2image>=1.16.0
+Pillow>=10.0.0
+
+# ============================================================================
+# OCR (Optional but recommended for text extraction)
+# ============================================================================
+pytesseract>=0.3.10
+
+# ============================================================================
+# Vector Search & Embeddings
+# ============================================================================
+faiss-cpu>=1.7.4
+# Note: Use faiss-gpu instead if you have CUDA-enabled GPU
+
+# ============================================================================
+# Data Processing & Analysis
+# ============================================================================
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+
+# ============================================================================
+# Web Framework & API
+# ============================================================================
+flask>=2.3.0
+flask-cors>=4.0.0
+requests>=2.31.0
+
+# ============================================================================
+# Frontend & Visualization
+# ============================================================================
+streamlit>=1.28.0
+plotly>=5.17.0
+
+# ============================================================================
+# Utilities
+# ============================================================================
+python-dateutil>=2.8.2
+tqdm>=4.65.0
+
+# ============================================================================
+# System Dependencies (install separately via package manager)
+# ============================================================================
+# For pdf2image:
+#   - Ubuntu/Debian: sudo apt-get install poppler-utils
+#   - macOS: brew install poppler
+#   - Windows: Download from http://blog.alivate.com.au/poppler-windows/
+#
+# For OCR (pytesseract):
+#   - Ubuntu/Debian: sudo apt-get install tesseract-ocr
+#   - macOS: brew install tesseract
+#   - Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
